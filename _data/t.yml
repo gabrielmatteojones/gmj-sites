@@ -7,63 +7,34 @@ social-card: /assets/images/favicons/social-card.png
 
 ## Site name
 name:
-  en: "A Jekyll theme"
-  it: "Un tema Jekyll"
+  it: "Gabriel Jones"
 
 ## Site description
 description:
-  en: "A website with a Jekyll theme"
-  it: "Sito di esempio per il tema Jekyll"
+  it: "Animazione, Bibliotecario, Politico e questa è solo una piccola parte del mio enorme mondo"
 
 ## Site author
 author:
-  en: "Digital Transformation Team"
-  it: "Team per la Trasformazione Digitale"
+  it: "AGID IT"
 
 ## Social
 social-links:
-  en:
-    twitter:
-      name: "twitter"
-      url: "https://twitter.com/ITdigitalteam"
-    medium:
-      name: "medium"
-      url: "https://medium.com/team-per-la-trasformazione-digitale/"
   it:
     twitter:
       name: "twitter"
-      url: "https://twitter.com/teamdigitaleIT"
-    medium:
-      name: "medium"
-      url: "https://medium.com/team-per-la-trasformazione-digitale/"
+      url: "https://twitter.com/gabrieljonesit"
+    instagram:
+      name: "instagram"
+      url: "https://instagram.com/gabrielmatteojones/"
 
 ## Labels
-italian-version:
-  en: "Italian version"
-  it: "Versione italiana"
-english-version:
-  en: "English version"
-  it: "Versione inglese"
-cookie-policy-info:
-  en: "This site uses technical, analytics and third-party cookies <br>By continuing to browse, you accept the use of cookies."
-  it: "Questo sito utilizza cookie tecnici, analytics e di terze parti.<br>Proseguendo nella navigazione accetti l’utilizzo dei cookie."
-cookie-policy-accept-btn:
-  en: "Ok"
-  it: "Accetto"
 footer-links:
-  en:
-    privacy-policy:
-      name: "Privacy policy"
-      url: "/en/privacy-policy"
-    cookie-policy:
-      name: "Cookie Policy"
-      url: "/en/cookie-policy"
   it:
-    privacy-policy:
-      name: "Privacy policy"
-      url: "/it/privacy-policy"
-    cookie-policy:
-      name: "Cookie Policy"
-      url: "/it/cookie-policy"
+    sezione-Legale:
+      name: "SezioneLegale"
+      url: "/legal/"
+    contatti:
+      name: "Contatti"
+      url: "/it/contatti"
 
 
