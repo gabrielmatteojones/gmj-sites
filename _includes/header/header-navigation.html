@@ -13,8 +13,8 @@ tutte le pagine del sito che:
         <div class="col-12">
           <div class="it-header-center-content-wrapper">
             <div class="it-brand-wrapper">
-              <a href="#">
-              <img src="/path/to/logo.png" alt="Logo Istituzione" class="icon icon-sm me-2" width="40" height="40">
+              <a href="/">
+              <img src="/assets/logo.png" alt="Logo" class="icon icon-sm me-2" width="40" height="40">
                 <div class="container">
                   <h2 class="no_toc">{{ site.data.t.name[page.lang] }}</h2>
                   <h3 class="no_toc d-none d-md-block">{{ site.data.t.description[page.lang] }}</h3>
@@ -37,17 +37,6 @@ tutte le pagine del sito che:
                   {% endfor %}
                 </ul>
               </div>
-              {% comment %}
-              <!-- Search button -->
-              <div class="it-search-wrapper">
-                <span class="d-none d-md-block">Cerca</span>
-                <a class="search-link rounded-icon" href="#" aria-label="Cerca">
-                  <svg class="icon">
-                    <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-search"></use>
-                  </svg>
-                </a>
-              </div>
-              {% endcomment %}
             </div>
           </div>
         </div>
@@ -71,11 +60,32 @@ tutte le pagine del sito che:
               </div>
               <div class="menu-wrapper">
                 <ul class="navbar-nav">
-                  {% for menu_page in current_lang_menu_pages %}
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}{{menu_page.permalink}}"><span>{{menu_page.title}}</span></a>
-                  </li>
-                  {% endfor %}
+
+
+                  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/biblioteca" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdown1">
+                    <span>Biblioteca</span>
+                    <svg class="icon icon-xs"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
+                  </a>
+                  <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdown1">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li><a class="dropdown-item list-item" href="{{ site.baseurl }}/biblioteca"><span>Biblioteca</span></a></li>
+                        <li><a class="dropdown-item list-item" href="{{ site.baseurl }}/biblioteca/competenze"><span>Competenze Bibliotecarie</span></a></li>
+                        <li><span class="divider"></span></li>
+                        <li><a class="dropdown-item list-item" href="https://comune.arenagiovani.it/aree-amministrative/uffici/cultura/biblioteca/"><span>Biblioteca Arena Giovani</span></a></li>
+                        <li><a class="dropdown-item list-item" href="https://bibliotecando.it"><span>Bibliotecando</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/trasparenza"><span>Trasparenza</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/progetti"><span>Progetti</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/areetematiche"><span>aree tematiche</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/about"><span>Chi Sono</span></a></li>
                 </ul>
               </div>
             </div>
