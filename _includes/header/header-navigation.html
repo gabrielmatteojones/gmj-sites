@@ -61,31 +61,99 @@ tutte le pagine del sito che:
               <div class="menu-wrapper">
                 <ul class="navbar-nav">
 
-
-                  
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/biblioteca" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdown1">
-                    <span>Biblioteca</span>
-                    <svg class="icon icon-xs"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
-                  </a>
-                  <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdown1">
-                    <div class="link-list-wrapper">
-                      <ul class="link-list">
-                        <li><a class="dropdown-item list-item" href="{{ site.baseurl }}/biblioteca"><span>Biblioteca</span></a></li>
-                        <li><a class="dropdown-item list-item" href="{{ site.baseurl }}/biblioteca/competenze"><span>Competenze Bibliotecarie</span></a></li>
-                        <li><span class="divider"></span></li>
-                        <li><a class="dropdown-item list-item" href="https://comune.arenagiovani.it/aree-amministrative/uffici/cultura/biblioteca/"><span>Biblioteca Arena Giovani</span></a></li>
-                        <li><a class="dropdown-item list-item" href="https://bibliotecando.it"><span>Bibliotecando</span></a></li>
-                      </ul>
+    <div class="menu-wrapper justify-content-lg-between">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown megamenu">
+          <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu-completo-C" data-focus-mouse="false">
+              <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
+          </button>
+          <div class="dropdown-menu shadow-lg" role="region" aria-labelledby="megamenu-completo-C">
+            <div class="megamenu pb-5 pt-3 py-lg-0">
+              <div class="row">
+                <div class="col-xs-12 col-lg-4 px-0">
+                  <div class="row">
+                    <div class="col-12 it-vertical it-description pb-lg-3">
+                      <div class="description-content ps-4 ps-sm-5 ms-3">
+                        <div class="ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded">
+                          <figure class="figure">
+                            <img src="https://placehold.co/560x240/ebebeb/808080/?text=Immagine" class="figure-img img-fluid rounded" alt="Segnaposto">
+                          </figure>
+                        </div>
+                        <p>
+                          Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </li>
+                </div>
+                <div class="col-12 col-lg-8">
+                  <div class="it-heading-link-wrapper">
+                    <a class="it-heading-link" href="#"><svg role="img" class="icon icon-sm me-2 mb-1"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg><span>Esplora la sezione megamenu</span>
+                    </a>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li>
+                            <a class="list-item dropdown-item" href="#">
+                              <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                              <span>Link lista 1</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="list-item dropdown-item" href="#">
+                              <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                              <span>Link lista 2</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="list-item dropdown-item " href="#">
+                              <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                              <span>Link lista 3</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li>
+                            <a class="list-item dropdown-item" href="#">
+                              <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                              <span>Link lista 4</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="list-item dropdown-item" href="#">
+                              <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                              <span>Link lista 5</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="list-item dropdown-item " href="#">
+                              <svg role="img" class="icon icon-sm me-2"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right-triangle"></use></svg>
+                              <span>Link lista 6</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
                   
-                  
+                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/about"><span>Chi Sono</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/trasparenza"><span>Trasparenza</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/progetti"><span>Progetti</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/areetematiche"><span>aree tematiche</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/about"><span>Chi Sono</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/portale"><span>Portale</span></a></li>
                 </ul>
               </div>
             </div>
